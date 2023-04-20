@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.containerr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 70%;
+    height: 10vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    width: 30%;
+
+}
+
+header .logo img {
+    width: 80px;
+
+}
+
+header .menu {
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu ul {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+header .menu ul li {
+    width: 100%;
+    height: 5vh;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    height: 30px;
+    text-align: center;
+    color: #000;
+    border: none;
+    font-weight: 600;
+
+}
+
+header .menu ul li:hover a {
+    color: #00b4fc;
+    border-bottom: 2px solid #00b4fc;
+}
+
+header .button {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header #lienhe {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #005bc5;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 500;
+}
+
+header #bar {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        width: 90%;
+        height: 10vh;
+    }
+
+    header .logo {
+        width: 50%;
+    }
+
+    header #bar {
+        display: block;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        margin-left: 25px;
+        border: none;
+        background: #005bc5;
+        border-radius: 5px;
+    }
+
+    header .button {
+        width: 50%;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .menu.active {
+        position: absolute;
+        top: 10%;
+        width: 90%;
+        height: 25vh;
+        background: #fff;
+        display: block;
+        z-index: 10;
+        overflow: auto;
+    }
+
+    header .menu ul {
+        display: block;
+        text-align: left;
+        width: 90%;
+        margin: 20px;
+        padding: 0;
+    }
+
+    header .menu ul li {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header #lienhe {
+        display: none;
+    }
+
+    header .menu.active {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        height: 25vh;
+        background: #fff;
+        display: block;
+    }
+}
+
+.containerr .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerr .content .slider {
+    width: 100%;
+    height: 90vh;
+    background: url(./imgs/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerr .content .slider #carouselExampleInterval {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerr .content .slider #carouselExampleInterval .noidung {
+    width: 100%;
+    text-align: center;
+    height: 50vh;
+}
+
+.noidung h1 {
+    margin-bottom: 30px;
+}
+
+.noidung button {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #00b4fc;
+    color: #fff;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .containerr .content .slider {
+        width: 100%;
+        height: 50vh;
+        /* background: red; */
+    }
+
+    .containerr .content .slider #carouselExampleInterval .noidung {
+        height: 35vh;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .containerr .content .slider {
+        width: 100%;
+        height: 50vh;
+        /* background: red; */
+    }
+
+    .containerr .content .slider #carouselExampleInterval .noidung {
+        height: 35vh;
+        margin: 0;
+    }
+
+    .noidung h1 {
+        margin-bottom: 10px;
+    }
+
+    .noidung button {
+        margin-top: 10px;
+    }
+
+}
+
+.containerr .content .visao {
+    width: 90%;
+    height: 45vh;
+    /* background: red; */
+    text-align: center;
+    padding: 40px 40px 0 40px;
+}
+
+.containerr .content .visao .visao_icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerr .content .visao .visao_icon .icon {
+    width: calc(100% / 4);
+}
+
+.containerr .content .visao .visao_icon .icon a {
+    font-size: 70px;
+    color: #000;
+}
+
+.containerr .content .visao .visao_icon .icon:hover {
+    color: #005bc5;
+    cursor: pointer;
+}
+
+.containerr .content .visao .visao_icon .icon:hover a {
+    color: #005bc5;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .containerr .content .visao {
+        width: 90%;
+        height: 60vh;
+    }
+
+    .containerr .content .visao .visao_icon {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .containerr .content .visao .visao_icon .icon {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .containerr .content .visao .visao_icon .icon a {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .containerr .content .visao {
+        width: 100%;
+        height: 47vh;
+        padding: 25px;
+    }
+
+    .containerr .content .visao .visao_icon {
+        margin-top: 7px;
+    }
+
+    .containerr .content .visao .visao_icon .icon {
+        width: 50%;
+        margin-top: 20px;
+
+    }
+
+    .containerr .content .visao .visao_icon .icon a {
+        font-size: 45px;
+    }
+
+    .containerr .content .visao .visao_icon .icon h4 {
+        font-size: 20px;
+    }
+}
+
+.containerr .content .loiich {
+    width: 100%;
+    height: 55vh;
+    /* background: red; */
+    padding: 0 50px 40px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerr .content .loiich .right {
+    width: 40%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.containerr .content .loiich .right table {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.containerr .content .loiich .right table tr {
+    width: 100%;
+    height: 40px;
+}
+
+.containerr .content .loiich .right table tr i {
+    margin-right: 15px;
+}
+
+.containerr .content .loiich .left {
+    width: 40%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerr .content .loiich .left img {
+    width: 130%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .containerr .content .loiich {
+        width: 80%;
+        height: 70vh;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .containerr .content .loiich .right {
+        width: 100%;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .containerr .content .loiich .right td {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .containerr .content .loiich {
+        width: 80%;
+        height: 53vh;
+        padding: 20px;
+    }
+
+    .containerr .content .loiich .right table tr td {
+        margin-left: 10px;
+        width: 50%;
+    }
+
+    .containerr .content .loiich .right table tr i {
+        margin-right: 5px;
+
+    }
+
+    .containerr .content .loiich .left {
+        height: 20vh;
+    }
+}
+
+.containerr .content .tinhnang {
+    width: 100%;
+    height: 80vh;
+    background: yellowgreen;
+}
+
+.containerr .content .giaiphap {
+    width: 100%;
+    height: 80vh;
+    background: green;
+}
+
+.containerr .content .khachhang {
+    width: 100%;
+
+    background: rgb(161, 222, 161);
+}
+
+.containerr .content .khachhang .khachhang_noigi{
+    width: 100%;
+    height: 80vh;
+    background: rgb(48, 58, 196);
+}
+.containerr .content .khachhang .khachhang_cuachungtoi{
+    width: 100%;
+    height: 40vh;
+    background: violet;
+}
+.containerr footer{
+    width: 100%;
+    height: 30vh;
+    background: red;
+}
