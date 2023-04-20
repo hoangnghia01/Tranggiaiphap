@@ -421,35 +421,262 @@ header #bar {
 }
 
 .containerr .content .tinhnang {
-    width: 100%;
-    height: 80vh;
-    background: yellowgreen;
+    width: 80%;
+    height: 65vh;
+    /* background: yellowgreen; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
-.containerr .content .giaiphap {
+.containerr .content .tinhnang h1 {
     width: 100%;
-    height: 80vh;
-    background: green;
+    margin: 50px;
+    margin-left: 100px;
+}
+
+.containerr .content .tinhnang .con_tinhnang {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.containerr .content .tinhnang .con_tinhnang .row1,
+.row2 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.containerr .content .tinhnang .con_tinhnang .con_row {
+    /* border: 1px solid red; */
+    background: #fceeee;
+    width: 20%;
+    height: 20vh;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.containerr .content .tinhnang .con_tinhnang .con_row:hover {
+    background: #00b4fc;
+    color: #fff;
+}
+
+.containerr .content .tinhnang .con_tinhnang .con_row h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.containerr .content .tinhnang .con_tinhnang .con_row i {
+    font-size: 60px;
+}
+
+
+.containerr .content .giaiphap {
+    width: 80%;
+    /* height: 80vh; */
+    /* background: green; */
+}
+
+.containerr .content .giaiphap h1 {
+    margin: 40px;
+    margin-bottom: 20px;
+}
+
+.containerr .content .giaiphap .nursecall {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.containerr .content .giaiphap .nursecall .left {
+    width: 45%;
+    /* text-align: center; */
+}
+
+.containerr .content .giaiphap .nursecall img {
+    width: 100%;
+}
+
+.containerr .content .giaiphap .nursecall .right {
+    width: 45%;
+}
+
+.containerr .content .giaiphap .nursecall h3 {
+    margin-bottom: 30px;
+}
+
+.containerr .content .giaiphap .nursecall button {
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #00b4fc;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .containerr .content .khachhang {
     width: 100%;
-
-    background: rgb(161, 222, 161);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: rgb(161, 222, 161); */
 }
 
-.containerr .content .khachhang .khachhang_noigi{
-    width: 100%;
-    height: 80vh;
-    background: rgb(48, 58, 196);
+.containerr .content .khachhang .khachhang_noigi {
+    width: 80%;
+    /* height: 80vh; */
+    text-align: center;
+    padding: 50px;
+
 }
-.containerr .content .khachhang .khachhang_cuachungtoi{
-    width: 100%;
-    height: 40vh;
-    background: violet;
+
+.containerr .content .khachhang .khachhang_noigi h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.containerr footer{
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000;
+
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.swiper-slide .info {
+    width: 100%;
+    /* height: 50px; */
+    display: flex;
+}
+
+.swiper-slide .info img {
+    display: block;
+    width: 10%;
+    /* height: 100%; */
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin: 50px auto;
+}
+
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.containerr .content .khachhang .khachhang_cuachungtoi {
+    width: 80%;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerr .content .khachhang .khachhang_cuachungtoi h1 {
+    margin: 30px 0 50px 0;
+}
+
+.containerr .content .khachhang .khachhang_cuachungtoi .khach {
+    width: 100%;
+
+}
+
+.containerr .content .khachhang .khachhang_cuachungtoi .khach .row_logo_khach {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.containerr .content .khachhang .khachhang_cuachungtoi .khach .logo_khach {
+    width: 18%;
+    border: #000 solid 1px;
+    border-radius: 10px;
+}
+
+.containerr .content .khachhang .khachhang_cuachungtoi .khach .row_logo_khach img {
+    width: 100%;
+}
+.containerr footer {
+    width: 80%;
+    height: 35vh;
+    text-align: center;
+    background: #f8f1e9;
+}
+
+.containerr footer .thongtin{
     width: 100%;
     height: 30vh;
-    background: red;
+    /* background: red; */
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    text-align: center;
+    /* background: #f8f1e9; */
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+.containerr footer .address{
+width: 30%;
+}
+.containerr footer i{
+    margin-right: 10px;
+}
+.containerr footer .design_by{
+    width: 100%;
+    height: 5vh;
+    
+   
 }
